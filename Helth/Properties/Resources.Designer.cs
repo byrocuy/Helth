@@ -83,16 +83,6 @@ namespace Helth.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _172569 {
-            get {
-                object obj = ResourceManager.GetObject("172569", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _80x80EAT {
             get {
                 object obj = ResourceManager.GetObject("80x80EAT", resourceCulture);
@@ -133,9 +123,9 @@ namespace Helth.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ooooof {
+        internal static System.Drawing.Bitmap gif1 {
             get {
-                object obj = ResourceManager.GetObject("ooooof", resourceCulture);
+                object obj = ResourceManager.GetObject("gif1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +133,9 @@ namespace Helth.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Untitled {
+        internal static System.Drawing.Bitmap gif2 {
             get {
-                object obj = ResourceManager.GetObject("Untitled", resourceCulture);
+                object obj = ResourceManager.GetObject("gif2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

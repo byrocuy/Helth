@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AturJadwal));
             this.lblQuotes = new System.Windows.Forms.Label();
             this.lblJadwal = new System.Windows.Forms.Label();
             this.lblJam = new System.Windows.Forms.Label();
@@ -112,6 +113,7 @@
             this.btrnSet.TabIndex = 7;
             this.btrnSet.Text = "Set Jadwal";
             this.btrnSet.UseVisualStyleBackColor = true;
+            this.btrnSet.Click += new System.EventHandler(this.btrnSet_Click);
             // 
             // label7
             // 
@@ -128,6 +130,7 @@
             this.dtpTanggal.Name = "dtpTanggal";
             this.dtpTanggal.Size = new System.Drawing.Size(200, 26);
             this.dtpTanggal.TabIndex = 13;
+            this.dtpTanggal.ValueChanged += new System.EventHandler(this.dtpTanggal_ValueChanged);
             // 
             // rtbDesc
             // 
@@ -172,9 +175,9 @@
             this.cbJadwal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbJadwal.FormattingEnabled = true;
             this.cbJadwal.Items.AddRange(new object[] {
-            "Jadwal Makan",
-            "Jadwal Tidur",
-            "Jadwal Olahraga"});
+            "Makan",
+            "Olahraga",
+            "Tidur"});
             this.cbJadwal.Location = new System.Drawing.Point(165, 241);
             this.cbJadwal.MaxDropDownItems = 3;
             this.cbJadwal.Name = "cbJadwal";
@@ -288,8 +291,8 @@
             // 
             // pbImg
             // 
-            this.pbImg.ErrorImage = global::Helth.Properties.Resources._150x150;
-            this.pbImg.Image = global::Helth.Properties.Resources._150x1501;
+            this.pbImg.ErrorImage = global::Helth.Properties.Resources._150x1501;
+            this.pbImg.Image = ((System.Drawing.Image)(resources.GetObject("pbImg.Image")));
             this.pbImg.Location = new System.Drawing.Point(40, 41);
             this.pbImg.Name = "pbImg";
             this.pbImg.Size = new System.Drawing.Size(150, 150);

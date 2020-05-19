@@ -33,8 +33,8 @@
             this.RtbQuotes = new System.Windows.Forms.RichTextBox();
             this.BtnSet = new System.Windows.Forms.Button();
             this.BtnAbout = new System.Windows.Forms.Button();
-            this.PbMain = new System.Windows.Forms.PictureBox();
             this.btnJadwalSaya = new System.Windows.Forms.Button();
+            this.PbMain = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PbMain)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,7 +42,7 @@
             // 
             this.LblTitle.AutoSize = true;
             this.LblTitle.Font = new System.Drawing.Font("Gotham", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTitle.Location = new System.Drawing.Point(387, 99);
+            this.LblTitle.Location = new System.Drawing.Point(389, 77);
             this.LblTitle.Name = "LblTitle";
             this.LblTitle.Size = new System.Drawing.Size(231, 81);
             this.LblTitle.TabIndex = 1;
@@ -52,7 +52,7 @@
             // 
             this.lblDesc.AutoSize = true;
             this.lblDesc.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesc.Location = new System.Drawing.Point(364, 182);
+            this.lblDesc.Location = new System.Drawing.Point(366, 160);
             this.lblDesc.Name = "lblDesc";
             this.lblDesc.Size = new System.Drawing.Size(280, 23);
             this.lblDesc.TabIndex = 2;
@@ -70,7 +70,7 @@
             // 
             // BtnSet
             // 
-            this.BtnSet.Location = new System.Drawing.Point(401, 226);
+            this.BtnSet.Location = new System.Drawing.Point(403, 204);
             this.BtnSet.Name = "BtnSet";
             this.BtnSet.Size = new System.Drawing.Size(217, 45);
             this.BtnSet.TabIndex = 4;
@@ -80,7 +80,7 @@
             // 
             // BtnAbout
             // 
-            this.BtnAbout.Location = new System.Drawing.Point(520, 277);
+            this.BtnAbout.Location = new System.Drawing.Point(522, 255);
             this.BtnAbout.Name = "BtnAbout";
             this.BtnAbout.Size = new System.Drawing.Size(98, 40);
             this.BtnAbout.TabIndex = 5;
@@ -88,13 +88,23 @@
             this.BtnAbout.UseVisualStyleBackColor = true;
             this.BtnAbout.Click += new System.EventHandler(this.BtnAbout_Click);
             // 
+            // btnJadwalSaya
+            // 
+            this.btnJadwalSaya.Location = new System.Drawing.Point(403, 255);
+            this.btnJadwalSaya.Name = "btnJadwalSaya";
+            this.btnJadwalSaya.Size = new System.Drawing.Size(113, 40);
+            this.btnJadwalSaya.TabIndex = 6;
+            this.btnJadwalSaya.Text = "Jadwal Saya";
+            this.btnJadwalSaya.UseVisualStyleBackColor = true;
+            this.btnJadwalSaya.Click += new System.EventHandler(this.btnJadwalSaya_Click);
+            // 
             // PbMain
             // 
             this.PbMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.PbMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PbMain.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.PbMain.Image = global::Helth.Properties.Resources.gif;
-            this.PbMain.InitialImage = global::Helth.Properties.Resources.ooooof;
+            this.PbMain.Image = global::Helth.Properties.Resources.gif2;
+            this.PbMain.InitialImage = global::Helth.Properties.Resources.gif;
             this.PbMain.Location = new System.Drawing.Point(31, 44);
             this.PbMain.Name = "PbMain";
             this.PbMain.Size = new System.Drawing.Size(300, 300);
@@ -102,16 +112,6 @@
             this.PbMain.TabIndex = 0;
             this.PbMain.TabStop = false;
             this.PbMain.UseWaitCursor = true;
-            // 
-            // btnJadwalSaya
-            // 
-            this.btnJadwalSaya.Location = new System.Drawing.Point(401, 277);
-            this.btnJadwalSaya.Name = "btnJadwalSaya";
-            this.btnJadwalSaya.Size = new System.Drawing.Size(113, 40);
-            this.btnJadwalSaya.TabIndex = 6;
-            this.btnJadwalSaya.Text = "Jadwal Saya";
-            this.btnJadwalSaya.UseVisualStyleBackColor = true;
-            this.btnJadwalSaya.Click += new System.EventHandler(this.btnJadwalSaya_Click);
             // 
             // Home
             // 
