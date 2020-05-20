@@ -21,5 +21,12 @@ namespace Helth
         {
             this.Close();
         }
+
+        private void Histori_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'jadwalDBDataSet.JadwalDB' table. You can move, or remove it, as needed.
+            this.jadwalDBTableAdapter.Fill(this.jadwalDBDataSet.JadwalDB);
+
+        }
     }
 }

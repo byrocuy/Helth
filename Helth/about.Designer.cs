@@ -44,27 +44,26 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Gotham", 36F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(140, 126);
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(180, 130);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(231, 81);
+            this.lblTitle.Size = new System.Drawing.Size(141, 55);
             this.lblTitle.TabIndex = 3;
             this.lblTitle.Text = "Helth";
             // 
             // lblDesc
             // 
             this.lblDesc.AutoSize = true;
-            this.lblDesc.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Italic);
-            this.lblDesc.Location = new System.Drawing.Point(115, 207);
+            this.lblDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesc.Location = new System.Drawing.Point(124, 185);
             this.lblDesc.Name = "lblDesc";
-            this.lblDesc.Size = new System.Drawing.Size(280, 23);
+            this.lblDesc.Size = new System.Drawing.Size(247, 25);
             this.lblDesc.TabIndex = 4;
             this.lblDesc.Text = "Atur jadwal hidup sehatmu!";
             // 
             // lblDesc2
             // 
-            this.lblDesc2.Font = new System.Drawing.Font("Gotham", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesc2.Location = new System.Drawing.Point(41, 240);
+            this.lblDesc2.Location = new System.Drawing.Point(35, 231);
             this.lblDesc2.Name = "lblDesc2";
             this.lblDesc2.Size = new System.Drawing.Size(448, 100);
             this.lblDesc2.TabIndex = 5;

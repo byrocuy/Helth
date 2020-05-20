@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Validation;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -54,6 +55,7 @@ namespace Helth
             Waktu = time;
             Tanggal = date;
             Ideskripsi = desc;
+            Ilokasi = "-";
         }
 
         public Jadwal(string activity, string time, string date, string loc, string desc)
@@ -71,6 +73,40 @@ namespace Helth
             MessageBox.Show(msg, "Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        public void SimpanJadwal()
+        {
+            using (var db = new JadwalEntity())
+            {
+                try
+                {
+                    JadwalDB jadwalBaru = new JadwalDB()
+                    {
+                        Jadwal = Ikegiatan,
+                        Jam = Waktu,
+                        Hari_Tanggal = Tanggal,
+                        Lokasi = Ilokasi,
+                        Deskripsi = Ideskripsi
+                    };
+
+                    db.JadwalDBs.Add(jadwalBaru);
+                    db.SaveChanges();
+                }
+                catch (DbEntityValidationException e)
+                {
+                    foreach (var eve in e.EntityValidationErrors)
+                    {
+                        Console.WriteLine("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
+                            eve.Entry.Entity.GetType().Name, eve.Entry.State);
+                        foreach (var ve in eve.ValidationErrors)
+                        {
+                            Console.WriteLine("- Property: \"{0}\", Error: \"{1}\"",
+                                ve.PropertyName, ve.ErrorMessage);
+                        }
+                    }
+                    throw;
+                }
+            }
+        }
 
     }
 }

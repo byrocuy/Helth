@@ -64,7 +64,8 @@ namespace Helth
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Histori newHistori = new Histori();
+            newHistori.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -79,7 +80,7 @@ namespace Helth
             // mendapatkan masukan dari combobox dan textbox
             string Aktivitas, Waktu, Date, Loc, Desc;
             Aktivitas = cbJadwal.GetItemText(cbJadwal.SelectedItem);
-            Waktu = userTime.Hour +":"+ userTime.Minute;
+            Waktu = userTime.Hour.ToString() + ":" + userTime.Minute.ToString() + ":" + userTime.Second.ToString();
             Date = dateTimePicker.Value.ToString("D");
             Loc = tbLoc.Text;
             Desc = rtbDesc.Text;
@@ -97,16 +98,19 @@ namespace Helth
                 {
                     Jadwal jadwal = new JadwalMakan(Aktivitas, Waktu, Date, Loc, Desc);
                     jadwal.showMsg();
+                    jadwal.SimpanJadwal();
                 }
                 if (cbJadwal.SelectedIndex == 1)
                 {
                     Jadwal jadwal = new JadwalOlahraga(Aktivitas, Waktu, Date, Loc, Desc);
                     jadwal.showMsg();
+                    jadwal.SimpanJadwal();
                 }
                 if (cbJadwal.SelectedIndex == 2)
                 {
                     Jadwal jadwal = new JadwalTidur(Aktivitas, Waktu, Date, Desc);
                     jadwal.showMsg();
+                    jadwal.SimpanJadwal();
                 }
             }
         }

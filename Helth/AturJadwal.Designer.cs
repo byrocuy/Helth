@@ -38,16 +38,16 @@
             this.rtbDesc = new System.Windows.Forms.RichTextBox();
             this.tbLoc = new System.Windows.Forms.TextBox();
             this.btnReset = new System.Windows.Forms.Button();
-            this.btnKembali = new System.Windows.Forms.Button();
+            this.btnHistori = new System.Windows.Forms.Button();
             this.cbJadwal = new System.Windows.Forms.ComboBox();
-            this.pbImg = new System.Windows.Forms.PictureBox();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.pbImg = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbImg)).BeginInit();
             this.SuspendLayout();
             // 
             // lblQuotes
             // 
-            this.lblQuotes.Font = new System.Drawing.Font("Gotham", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblQuotes.Location = new System.Drawing.Point(186, 41);
             this.lblQuotes.Name = "lblQuotes";
             this.lblQuotes.Size = new System.Drawing.Size(269, 150);
@@ -119,23 +119,23 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(134, 501);
+            this.btnReset.Location = new System.Drawing.Point(156, 501);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(81, 40);
+            this.btnReset.Size = new System.Drawing.Size(81, 41);
             this.btnReset.TabIndex = 16;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btnKembali
+            // btnHistori
             // 
-            this.btnKembali.Location = new System.Drawing.Point(26, 501);
-            this.btnKembali.Name = "btnKembali";
-            this.btnKembali.Size = new System.Drawing.Size(92, 41);
-            this.btnKembali.TabIndex = 17;
-            this.btnKembali.Text = "Kembali";
-            this.btnKembali.UseVisualStyleBackColor = true;
-            this.btnKembali.Click += new System.EventHandler(this.button3_Click);
+            this.btnHistori.Location = new System.Drawing.Point(26, 501);
+            this.btnHistori.Name = "btnHistori";
+            this.btnHistori.Size = new System.Drawing.Size(124, 41);
+            this.btnHistori.TabIndex = 17;
+            this.btnHistori.Text = "Jadwal Saya";
+            this.btnHistori.UseVisualStyleBackColor = true;
+            this.btnHistori.Click += new System.EventHandler(this.button3_Click);
             // 
             // cbJadwal
             // 
@@ -154,6 +154,15 @@
             this.cbJadwal.TabIndex = 18;
             this.cbJadwal.SelectedIndexChanged += new System.EventHandler(this.cbJadwal_SelectedIndexChanged);
             // 
+            // dateTimePicker
+            // 
+            this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker.Location = new System.Drawing.Point(164, 288);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(106, 26);
+            this.dateTimePicker.TabIndex = 21;
+            this.dateTimePicker.Value = new System.DateTime(2020, 5, 19, 12, 0, 0, 0);
+            // 
             // pbImg
             // 
             this.pbImg.ErrorImage = global::Helth.Properties.Resources._150x1501;
@@ -165,15 +174,6 @@
             this.pbImg.TabIndex = 0;
             this.pbImg.TabStop = false;
             // 
-            // dateTimePicker
-            // 
-            this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker.Location = new System.Drawing.Point(164, 288);
-            this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(106, 26);
-            this.dateTimePicker.TabIndex = 21;
-            this.dateTimePicker.Value = new System.DateTime(2020, 5, 19, 12, 0, 0, 0);
-            // 
             // AturJadwal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -181,7 +181,7 @@
             this.ClientSize = new System.Drawing.Size(517, 564);
             this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.cbJadwal);
-            this.Controls.Add(this.btnKembali);
+            this.Controls.Add(this.btnHistori);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.tbLoc);
             this.Controls.Add(this.rtbDesc);
@@ -214,7 +214,7 @@
         private System.Windows.Forms.RichTextBox rtbDesc;
         private System.Windows.Forms.TextBox tbLoc;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Button btnKembali;
+        private System.Windows.Forms.Button btnHistori;
         private System.Windows.Forms.ComboBox cbJadwal;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
     }

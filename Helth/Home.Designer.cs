@@ -42,20 +42,20 @@
             // LblTitle
             // 
             this.LblTitle.AutoSize = true;
-            this.LblTitle.Font = new System.Drawing.Font("Gotham", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTitle.Location = new System.Drawing.Point(389, 77);
+            this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTitle.Location = new System.Drawing.Point(436, 94);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(231, 81);
+            this.LblTitle.Size = new System.Drawing.Size(141, 55);
             this.LblTitle.TabIndex = 1;
             this.LblTitle.Text = "Helth";
             // 
             // lblDesc
             // 
             this.lblDesc.AutoSize = true;
-            this.lblDesc.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesc.Location = new System.Drawing.Point(366, 160);
+            this.lblDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesc.Location = new System.Drawing.Point(384, 149);
             this.lblDesc.Name = "lblDesc";
-            this.lblDesc.Size = new System.Drawing.Size(280, 23);
+            this.lblDesc.Size = new System.Drawing.Size(247, 25);
             this.lblDesc.TabIndex = 2;
             this.lblDesc.Text = "Atur jadwal hidup sehatmu!";
             // 
