@@ -52,7 +52,12 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="Alarm.cs" />
+    <Compile Include="Alarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alarm.Designer.cs">
+      <DependentUpon>Alarm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AturJadwal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,11 +76,18 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="IDetail.cs" />
     <Compile Include="Jadwal.cs" />
+    <Compile Include="JadwalMakan.cs" />
+    <Compile Include="JadwalOlahraga.cs" />
+    <Compile Include="JadwalTidur.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alarm.resx">
+      <DependentUpon>Alarm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AturJadwal.resx">
       <DependentUpon>AturJadwal.cs</DependentUpon>

@@ -4,11 +4,16 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Helth
 {
-    class Jadwal
+    public class Jadwal : IDetail
     {
+        public string Ikegiatan { get; set; }
+        public string Ilokasi { get; set; }
+        public string Ideskripsi { get; set; }
+
         // Waktu disetel bertipe string terlebih dahulu
         // konversi menjadi integer saat kalkulasi saja
         private string _activity, _loc, _desc, _date, _time;
@@ -43,13 +48,29 @@ namespace Helth
             set { _time = value; }
         }
 
-        public Jadwal(string activity, string time, string date, string loc, string desc)
+        public Jadwal(string activity, string time, string date, string desc)
         {
-            Kegiatan = activity;
+            Ikegiatan = activity;
             Waktu = time;
             Tanggal = date;
-            Lokasi = loc;
-            Deskripsi = desc;
+            Ideskripsi = desc;
         }
+
+        public Jadwal(string activity, string time, string date, string loc, string desc)
+        {
+            Ikegiatan = activity;
+            Waktu = time;
+            Tanggal = date;
+            Ilokasi = loc;
+            Ideskripsi = desc;
+        }
+
+        public virtual void showMsg()
+        {
+            string msg = "Kegiatan : " + Ikegiatan + "\nWaktu: " + Waktu + "\nTanggal: " + Tanggal + "\ndeskripsi: " + Ideskripsi;
+            MessageBox.Show(msg, "Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+
     }
 }

@@ -33,7 +33,6 @@
             this.lblDesc = new System.Windows.Forms.Label();
             this.lblDesc2 = new System.Windows.Forms.Label();
             this.lblCopy = new System.Windows.Forms.Label();
-            this.btnBack = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -75,21 +74,11 @@
             // lblCopy
             // 
             this.lblCopy.AutoSize = true;
-            this.lblCopy.Location = new System.Drawing.Point(140, 377);
+            this.lblCopy.Location = new System.Drawing.Point(150, 377);
             this.lblCopy.Name = "lblCopy";
             this.lblCopy.Size = new System.Drawing.Size(231, 20);
             this.lblCopy.TabIndex = 6;
             this.lblCopy.Text = "© Helth. All right reserved. 2020";
-            // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(413, 360);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(87, 37);
-            this.btnBack.TabIndex = 7;
-            this.btnBack.Text = "Kembali";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // pictureBox3
             // 
@@ -126,7 +115,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(524, 418);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblCopy);
             this.Controls.Add(this.lblDesc2);
             this.Controls.Add(this.lblDesc);
@@ -153,6 +141,5 @@
         private System.Windows.Forms.Label lblDesc;
         private System.Windows.Forms.Label lblDesc2;
         private System.Windows.Forms.Label lblCopy;
-        private System.Windows.Forms.Button btnBack;
     }
 }
