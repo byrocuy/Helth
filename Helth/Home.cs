@@ -12,9 +12,11 @@ namespace Helth
 {
     public partial class Home : Form
     {
+        quotes quotes = new quotes();
         public Home()
         {
             InitializeComponent();
+            RtbQuotes.Text = quotes.getQuotes();
         }
 
         private void BtnSet_Click(object sender, EventArgs e)
