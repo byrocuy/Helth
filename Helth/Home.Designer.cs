@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.LblTitle = new System.Windows.Forms.Label();
             this.lblDesc = new System.Windows.Forms.Label();
             this.RtbQuotes = new System.Windows.Forms.RichTextBox();
@@ -125,6 +126,7 @@
             this.Controls.Add(this.lblDesc);
             this.Controls.Add(this.LblTitle);
             this.Controls.Add(this.PbMain);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Home";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.PbMain)).EndInit();

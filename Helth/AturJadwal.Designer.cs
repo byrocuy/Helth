@@ -94,7 +94,7 @@
             // 
             // btrnSet
             // 
-            this.btrnSet.Location = new System.Drawing.Point(348, 501);
+            this.btrnSet.Location = new System.Drawing.Point(348, 502);
             this.btrnSet.Name = "btrnSet";
             this.btrnSet.Size = new System.Drawing.Size(150, 40);
             this.btrnSet.TabIndex = 7;
@@ -119,7 +119,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(261, 501);
+            this.btnReset.Location = new System.Drawing.Point(134, 501);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(81, 40);
             this.btnReset.TabIndex = 16;
@@ -192,6 +192,7 @@
             this.Controls.Add(this.lblJadwal);
             this.Controls.Add(this.lblQuotes);
             this.Controls.Add(this.pbImg);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AturJadwal";
             this.Text = "AturJadwal";
             this.Load += new System.EventHandler(this.AturJadwal_Load);

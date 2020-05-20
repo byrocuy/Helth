@@ -87,7 +87,7 @@ namespace Helth
             if (cbJadwal.SelectedItem == null && string.IsNullOrWhiteSpace(rtbDesc.Text))
             {
                 // kalau jadwal sama deskripsi ngga diisi
-                MessageBox.Show("Harap isi semua form!", "Peringatan");
+                MessageBox.Show("Harap isi semua form!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
